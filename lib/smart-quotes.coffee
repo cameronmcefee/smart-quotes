@@ -1,7 +1,7 @@
 module.exports =
 
   activate: (state) ->
-    atom.workspaceView.command "smart-quotes:smart", => @toSmart()
+    atom.workspaceView.command "smart-quotes:convert-to-smart-quotes", => @toSmart()
 
   toSmart: ->
     editor = atom.workspace.activePaneItem

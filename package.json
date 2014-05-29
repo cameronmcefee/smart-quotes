@@ -3,7 +3,7 @@
   "main": "./lib/smart-quotes",
   "version": "0.0.1",
   "description": "Convert dumb quotes to smart quotes",
-  "activationEvents": ["smart-quotes:smart"],
+  "activationEvents": ["smart-quotes:convert-to-smart-quotes"],
   "repository": "https://github.com/cameronmcefee/smart-quotes",
   "license": "MIT",
   "engines": {

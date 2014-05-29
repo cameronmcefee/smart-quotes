@@ -1,7 +1,7 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
   '.overlayer':
-    'Convert to smart quotes': 'smart-quotes:smart'
+    'Convert to smart quotes': 'smart-quotes:convert-to-smart-quotes'
 
 'menu': [
   {
@@ -9,7 +9,7 @@
     'submenu': [
       'label': 'Smart Quotes'
       'submenu': [
-        { 'label': 'Convert to smart quotes', 'command': 'smart-quotes:smart' }
+        { 'label': 'Convert to smart quotes', 'command': 'smart-quotes:convert-to-smart-quotes' }
       ]
     ]
   }
