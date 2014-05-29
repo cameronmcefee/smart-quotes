@@ -1,5 +1,9 @@
-# smart-quotes package
+# Smart Quotes
 
-A short description of your package.
+Take your quotes to school. Convert `""` and `''` to `“”` and `‘’`. It fixes apostrophes too.
 
-![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![](http://cl.ly/image/1G3g3b2P1I0r/content)
+
+## Usage
+
+Select the text with dumb quotes and press `cmd+alt+shift+'`.
