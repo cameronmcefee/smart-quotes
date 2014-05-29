@@ -19,12 +19,12 @@ describe "SmartQuotes", ->
 
       # This is an activation event, triggering it will cause the package to be
       # activated.
-      atom.workspaceView.trigger 'smart-quotes:toggle'
+      atom.workspaceView.trigger 'smart-quotes:smart'
 
       waitsForPromise ->
         activationPromise
 
       runs ->
         expect(atom.workspaceView.find('.smart-quotes')).toExist()
-        atom.workspaceView.trigger 'smart-quotes:toggle'
+        atom.workspaceView.trigger 'smart-quotes:smart'
         expect(atom.workspaceView.find('.smart-quotes')).not.toExist()

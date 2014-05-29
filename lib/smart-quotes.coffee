@@ -1,13 +1,20 @@
-SmartQuotesView = require './smart-quotes-view'
-
 module.exports =
-  smartQuotesView: null
 
   activate: (state) ->
-    @smartQuotesView = new SmartQuotesView(state.smartQuotesViewState)
+    atom.workspaceView.command "smart-quotes:smart", => @smarter()
 
-  deactivate: ->
-    @smartQuotesView.destroy()
+  smarter: ->
+    editor = atom.workspace.activePaneItem
+    selection = editor.getSelection()
 
-  serialize: ->
-    smartQuotesViewState: @smartQuotesView.serialize()
+    smarterText = selection.getText()
+
+    # Regexp adapted from this post:
+    # http://www.leancrew.com/all-this/2010/11/smart-quotes-in-javascript/
+    smarterText = smarterText
+      .replace(/(^|[-—\s(\["])'/g, "$1‘")  # opening singles
+      .replace(/'/g, "’")                  # closing singles & apostrophes
+      .replace(/(^|[-—/\[(‘\s])"/g, "$1“") # opening doubles
+      .replace(/"/g, "”")                  # closing doubles
+
+    selection.insertText(smarterText)

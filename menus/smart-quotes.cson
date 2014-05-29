@@ -1,15 +1,15 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
   '.overlayer':
-      'Enable smart-quotes': 'smart-quotes:toggle'
+    'Convert to smart quotes': 'smart-quotes:smart'
 
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'smart-quotes'
+      'label': 'Smart Quotes'
       'submenu': [
-        { 'label': 'Toggle', 'command': 'smart-quotes:toggle' }
+        { 'label': 'Convert to smart quotes', 'command': 'smart-quotes:smart' }
       ]
     ]
   }

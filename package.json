@@ -3,7 +3,7 @@
   "main": "./lib/smart-quotes",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "activationEvents": ["smart-quotes:toggle"],
+  "activationEvents": ["smart-quotes:smart"],
   "repository": "https://github.com/atom/smart-quotes",
   "license": "MIT",
   "engines": {
