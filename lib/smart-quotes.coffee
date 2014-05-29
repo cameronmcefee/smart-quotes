@@ -1,9 +1,9 @@
 module.exports =
 
   activate: (state) ->
-    atom.workspaceView.command "smart-quotes:smart", => @smarter()
+    atom.workspaceView.command "smart-quotes:smart", => @toSmart()
 
-  smarter: ->
+  toSmart: ->
     editor = atom.workspace.activePaneItem
     selection = editor.getSelection()
 
