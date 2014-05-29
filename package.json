@@ -1,10 +1,10 @@
 {
   "name": "smart-quotes",
   "main": "./lib/smart-quotes",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.0.1",
+  "description": "Convert dumb quotes to smart quotes",
   "activationEvents": ["smart-quotes:smart"],
-  "repository": "https://github.com/atom/smart-quotes",
+  "repository": "https://github.com/cameronmcefee/smart-quotes",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
