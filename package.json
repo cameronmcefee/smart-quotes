@@ -1,0 +1,14 @@
+{
+  "name": "smart-quotes",
+  "main": "./lib/smart-quotes",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "activationEvents": ["smart-quotes:toggle"],
+  "repository": "https://github.com/atom/smart-quotes",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
